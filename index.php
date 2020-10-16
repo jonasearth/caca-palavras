@@ -38,7 +38,8 @@ $words = [
 $game = new Game(
     20,
     24, 
-    10,//recomendado até 20 palavras, acima disso pode ocasionar lentidões por falta de espaço.
+    10,//recomendado até 20 palavras, acima disso pode ocasionar lentidões por falta de espaço e um maximo de 30 palavras para essa lista.
+       //caso deseje mais de 30 palavras apenas adicione ao array e gg.
     $words);
 
 $game->makeGame();
