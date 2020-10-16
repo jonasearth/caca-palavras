@@ -3,7 +3,7 @@
 require_once "./IGame.php";
 class Game implements IGame{
 
-    private const letras = 'abcdefghijklmnopqrstuvwxyz';
+    private const words = 'abcdefghijklmnopqrstuvwxyz';
     private $width;
     private $height;
     private $numberOfWords;
@@ -326,7 +326,7 @@ class Game implements IGame{
                 if ($this->map[$i][$a] !== null)
                     echo "<button style='color:red; width: 20px; height:20px;'>" . $this->map[$i][$a] . "</button>";
                 else {
-                    echo "<button style='width: 20px; height:20px;' >" . Game::letras[rand(0, strlen(Game::letras) - 1)] . "</button>";
+                    echo "<button style='width: 20px; height:20px;' >" . Game::words[rand(0, strlen(Game::words) - 1)] . "</button>";
                 }
             }
         }
